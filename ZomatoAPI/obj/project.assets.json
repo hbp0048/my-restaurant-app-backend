@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ZomatoApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/ZomatoApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZomatoApi.Core.dll": {}
+        }
+      },
+      "ZomatoApi.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "ZomatoApi.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ZomatoApi.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZomatoApi.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZomatoApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../ZomatoApi.Core/ZomatoApi.Core.csproj",
+      "msbuildProject": "../ZomatoApi.Core/ZomatoApi.Core.csproj"
+    },
+    "ZomatoApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ZomatoApi.Infrastructure/ZomatoApi.Infrastructure.csproj",
+      "msbuildProject": "../ZomatoApi.Infrastructure/ZomatoApi.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "ZomatoApi.Core >= 1.0.0",
+      "ZomatoApi.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\minju\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoAPI\\ZomatoAPI.csproj",
+      "projectName": "ZomatoAPI",
+      "projectPath": "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoAPI\\ZomatoAPI.csproj",
+      "packagesPath": "C:\\Users\\minju\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\minju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoApi.Core\\ZomatoApi.Core.csproj": {
+              "projectPath": "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoApi.Core\\ZomatoApi.Core.csproj"
+            },
+            "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoApi.Infrastructure\\ZomatoApi.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\minju\\source\\ZomatoAPI\\ZomatoApi.Infrastructure\\ZomatoApi.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
